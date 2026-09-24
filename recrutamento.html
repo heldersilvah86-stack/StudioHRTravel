@@ -1,13 +1,575 @@
-<!DOCTYPE html><html lang="pt-PT"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Oportunidades para trabalhar com a Studio HR Travel."><title>Trabalha connosco | Studio HR Travel</title><style>
-:root{--turquoise:#2fa6a4;--turquoise-dark:#197b7a;--coral:#ff7464;--cream:#fff1cf;--ink:#17323a;--white:#fff;--soft:#f7fbfa;--shadow:0 16px 40px rgba(23,50,58,.14)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{color:var(--ink);background:var(--white);font-family:"Segoe UI",Arial,sans-serif;line-height:1.6}img{display:block;max-width:100%}a{color:inherit}.nav{position:absolute;z-index:10;top:0;left:0;width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 7%;color:var(--white)}.nav-logo{width:155px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.2)}.nav-links{display:flex;gap:22px;align-items:center}.nav-links a{text-decoration:none;font-weight:650}.nav-recruit{background:var(--coral);padding:10px 16px;border-radius:999px}.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:130px 7% 80px;color:var(--white);background:linear-gradient(rgba(9,54,62,.58),rgba(9,54,62,.68)),url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat}.hero-content{max-width:850px}.hero h1{font-size:clamp(2.35rem,6vw,4.8rem);line-height:1.05;margin-bottom:22px}.hero p{max-width:720px;margin:0 auto 34px;font-size:clamp(1rem,2vw,1.3rem)}.btn{display:inline-block;border:0;border-radius:999px;padding:15px 28px;background:var(--coral);color:var(--white);font-weight:750;text-decoration:none;box-shadow:0 10px 25px rgba(255,116,100,.3);cursor:pointer}.btn-light{background:var(--cream);color:var(--ink)}section{padding:86px 8%}.section-heading{max-width:760px;margin:0 auto 45px;text-align:center}.eyebrow{color:var(--coral);font-weight:800;letter-spacing:.09em;text-transform:uppercase;font-size:.8rem}h2{color:var(--turquoise-dark);font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:8px 0 14px}.cards,.benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1180px;margin:0 auto}.card{overflow:hidden;border-radius:20px;background:var(--white);box-shadow:var(--shadow)}.card img{width:100%;height:260px;object-fit:cover}.card-body{padding:24px}.card h3,.benefit h3{color:var(--turquoise-dark);margin-bottom:8px}.about{background:var(--soft)}.about-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:52px}.about-copy p{margin-bottom:18px}.about-panel{border-radius:24px;padding:38px;background:var(--cream);box-shadow:var(--shadow)}.checks{list-style:none;display:grid;gap:14px}.checks li:before{content:"✓";color:var(--coral);font-weight:900;margin-right:10px}.benefit{text-align:center;padding:34px 24px;border:1px solid #dcebea;border-radius:18px}.benefit-number{color:var(--coral);font-size:1.7rem;font-weight:900}.contact{text-align:center;color:var(--white);background:linear-gradient(135deg,var(--turquoise-dark),var(--turquoise))}.contact h2{color:var(--white)}.contact-details{margin:24px 0 30px;display:grid;gap:6px}.contact-details a{text-decoration:none;font-weight:700}.cta-recruit{text-align:center;background:var(--cream)}.cta-recruit p{max-width:700px;margin:0 auto 25px}footer{padding:24px 7%;text-align:center;background:#112d34;color:#dcebea}.whatsapp{position:fixed;z-index:20;right:20px;bottom:20px;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#25d366;color:white;text-decoration:none;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.25)}
-@media(max-width:900px){.nav{align-items:flex-start}.nav-links a:not(.nav-recruit){display:none}.cards,.benefits,.about-grid{grid-template-columns:1fr}.card img{height:230px}section{padding:66px 6%}.nav-logo{width:130px}.nav-recruit{font-size:.85rem}}
+<!DOCTYPE html>
+<html lang="pt-PT">
 
-.hero-recruit{min-height:72vh;display:grid;place-items:center;text-align:center;padding:140px 7% 80px;color:white;background:linear-gradient(rgba(9,54,62,.58),rgba(9,54,62,.72)),url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat}.hero-recruit .hero-content{max-width:820px}.hero-recruit h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.08;margin:12px 0 22px}.steps{counter-reset:steps;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:auto}.step{padding:30px;border-radius:18px;background:white;box-shadow:var(--shadow)}.step:before{counter-increment:steps;content:counter(steps);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--coral);color:white;font-weight:900;margin-bottom:16px}.form-wrap{max-width:820px;margin:auto;background:white;padding:36px;border-radius:24px;box-shadow:var(--shadow)}.field{display:grid;gap:7px;margin-bottom:18px}.field label{font-weight:750}.field input,.field textarea,.field select{width:100%;padding:14px;border:1px solid #cbdedd;border-radius:10px;font:inherit}.field input:focus,.field textarea:focus,.field select:focus{outline:3px solid rgba(47,166,164,.18);border-color:var(--turquoise)}.consent{display:flex;gap:10px;align-items:flex-start;margin:18px 0;font-size:.92rem}.consent input{margin-top:5px}.notice{margin-top:18px;padding:14px;border-radius:10px;background:var(--cream);font-size:.9rem}.back-link{display:inline-block;margin-top:24px;color:var(--turquoise-dark);font-weight:750;text-decoration:none}@media(max-width:900px){.steps{grid-template-columns:1fr}.form-wrap{padding:24px}.hero-recruit{min-height:65vh}.nav-links a{display:none!important}.nav-links .nav-recruit{display:inline-block!important}}
-</style></head><body>
-<nav class="nav"><a href="index.html"><img class="nav-logo" src="logo.png" alt="Logótipo Studio HR Travel"></a><div class="nav-links"><a href="index.html">Página inicial</a><a class="nav-recruit" href="#candidatura">Candidatar-me</a></div></nav>
-<header class="hero-recruit"><div class="hero-content"><p class="eyebrow">Studio HR Travel</p><h1>Queres trabalhar connosco?</h1><p>Transforma o teu gosto por viagens numa oportunidade profissional. Procuramos pessoas comunicativas, organizadas e com vontade de aprender.</p><a class="btn" href="#candidatura">Quero candidatar-me</a></div></header>
-<main><section><div class="section-heading"><p class="eyebrow">A oportunidade</p><h2>Vantagens de trabalhar connosco</h2><p>Uma oportunidade para desenvolver competências no turismo, apoiar clientes e crescer com a Studio HR Travel.</p></div><div class="benefits"><article class="benefit"><div class="benefit-number">01</div><h3>Flexibilidade</h3><p>Organização do trabalho ajustada ao modelo definido para cada colaboração.</p></article><article class="benefit"><div class="benefit-number">02</div><h3>Aprendizagem</h3><p>Contacto com destinos, operadores, propostas e acompanhamento de clientes.</p></article><article class="benefit"><div class="benefit-number">03</div><h3>Crescimento</h3><p>Possibilidade de desenvolver competências comerciais e de atendimento.</p></article><article class="benefit"><div class="benefit-number">04</div><h3>Trabalho em equipa</h3><p>Comunicação próxima, entreajuda e partilha de conhecimento.</p></article><article class="benefit"><div class="benefit-number">05</div><h3>Paixão por viagens</h3><p>Trabalho ligado a experiências, destinos e planeamento de férias.</p></article><article class="benefit"><div class="benefit-number">06</div><h3>Impacto direto</h3><p>Ajuda os clientes a transformar ideias em viagens bem organizadas.</p></article></div></section>
-<section class="about"><div class="section-heading"><p class="eyebrow">Perfil</p><h2>Quem procuramos?</h2></div><div class="about-panel" style="max-width:800px;margin:auto"><ul class="checks"><li>Gosto por viagens e turismo</li><li>Facilidade de comunicação e contacto com clientes</li><li>Organização, responsabilidade e iniciativa</li><li>Vontade de aprender e trabalhar em equipa</li><li>Orientação para soluções e qualidade de serviço</li><li>Disponibilidade para conhecer melhor o modelo de colaboração</li></ul></div></section>
-<section><div class="section-heading"><p class="eyebrow">Processo</p><h2>Como funciona?</h2></div><div class="steps"><article class="step"><h3>Envia a candidatura</h3><p>Preenche o formulário com os teus dados e uma breve apresentação.</p></article><article class="step"><h3>Falamos contigo</h3><p>Se o perfil estiver alinhado, entramos em contacto para uma conversa.</p></article><article class="step"><h3>Conhece a oportunidade</h3><p>Explicamos o funcionamento, as expectativas e os próximos passos.</p></article></div></section>
-<section class="about" id="candidatura"><div class="section-heading"><p class="eyebrow">Candidatura espontânea</p><h2>Conta-nos um pouco sobre ti</h2><p>O formulário fica pronto depois de substituíres <strong>SEU_ID_FORMSPREE</strong> pelo identificador fornecido pelo Formspree.</p></div><form class="form-wrap" action="https://formspree.io/f/SEU_ID_FORMSPREE" method="POST"><input type="hidden" name="assunto" value="Nova candidatura - Studio HR Travel"><div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" type="text" autocomplete="name" required></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" required></div><div class="field"><label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" autocomplete="address-level2"></div><div class="field"><label for="experiencia">Tens experiência em turismo ou atendimento ao cliente?</label><select id="experiencia" name="experiencia"><option value="">Selecionar</option><option>Sim, em turismo</option><option>Sim, em atendimento ou vendas</option><option>Ainda não, mas quero aprender</option></select></div><div class="field"><label for="linkedin">LinkedIn ou portefólio</label><input id="linkedin" name="linkedin" type="url" placeholder="https://"></div><div class="field"><label for="mensagem">Porque gostarias de trabalhar connosco? *</label><textarea id="mensagem" name="mensagem" rows="7" required></textarea></div><label class="consent"><input type="checkbox" name="consentimento" value="Aceito" required><span>Autorizo a Studio HR Travel a utilizar os dados enviados exclusivamente para analisar e responder a esta candidatura. *</span></label><button class="btn" type="submit">Enviar candidatura</button><p class="notice">Não incluímos envio de ficheiros nesta versão. Se quiseres receber currículos, podes pedir o CV por email após o primeiro contacto ou configurar uma solução de formulários com upload e uma informação de privacidade adequada.</p></form><div style="text-align:center"><a class="back-link" href="index.html">← Voltar à página principal</a></div></section></main><footer><p>&copy; 2026 Studio HR Travel. Todos os direitos reservados.</p></footer></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Oportunidades para trabalhar com a Studio HR Travel.">
+    <title>Trabalha connosco | Studio HR Travel</title>
+    <style>
+        :root {
+            --turquoise: #2fa6a4;
+            --turquoise-dark: #197b7a;
+            --coral: #ff7464;
+            --cream: #fff1cf;
+            --ink: #17323a;
+            --white: #fff;
+            --soft: #f7fbfa;
+            --shadow: 0 16px 40px rgba(23, 50, 58, .14)
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            color: var(--ink);
+            background: var(--white);
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6
+        }
+
+        img {
+            display: block;
+            max-width: 100%
+        }
+
+        a {
+            color: inherit
+        }
+
+        .nav {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 18px 7%;
+            color: var(--white)
+        }
+
+        .nav-logo {
+            width: 155px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .2)
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            align-items: center
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 650
+        }
+
+        .nav-recruit {
+            background: var(--coral);
+            padding: 10px 16px;
+            border-radius: 999px
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 130px 7% 80px;
+            color: var(--white);
+            background: linear-gradient(rgba(9, 54, 62, .58), rgba(9, 54, 62, .68)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat
+        }
+
+        .hero-content {
+            max-width: 850px
+        }
+
+        .hero h1 {
+            font-size: clamp(2.35rem, 6vw, 4.8rem);
+            line-height: 1.05;
+            margin-bottom: 22px
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: 0 auto 34px;
+            font-size: clamp(1rem, 2vw, 1.3rem)
+        }
+
+        .btn {
+            display: inline-block;
+            border: 0;
+            border-radius: 999px;
+            padding: 15px 28px;
+            background: var(--coral);
+            color: var(--white);
+            font-weight: 750;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(255, 116, 100, .3);
+            cursor: pointer
+        }
+
+        .btn-light {
+            background: var(--cream);
+            color: var(--ink)
+        }
+
+        section {
+            padding: 86px 8%
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin: 0 auto 45px;
+            text-align: center
+        }
+
+        .eyebrow {
+            color: var(--coral);
+            font-weight: 800;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+            font-size: .8rem
+        }
+
+        h2 {
+            color: var(--turquoise-dark);
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+            margin: 8px 0 14px
+        }
+
+        .cards,
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 1180px;
+            margin: 0 auto
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 20px;
+            background: var(--white);
+            box-shadow: var(--shadow)
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover
+        }
+
+        .card-body {
+            padding: 24px
+        }
+
+        .card h3,
+        .benefit h3 {
+            color: var(--turquoise-dark);
+            margin-bottom: 8px
+        }
+
+        .about {
+            background: var(--soft)
+        }
+
+        .about-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 52px
+        }
+
+        .about-copy p {
+            margin-bottom: 18px
+        }
+
+        .about-panel {
+            border-radius: 24px;
+            padding: 38px;
+            background: var(--cream);
+            box-shadow: var(--shadow)
+        }
+
+        .checks {
+            list-style: none;
+            display: grid;
+            gap: 14px
+        }
+
+        .checks li:before {
+            content: "✓";
+            color: var(--coral);
+            font-weight: 900;
+            margin-right: 10px
+        }
+
+        .benefit {
+            text-align: center;
+            padding: 34px 24px;
+            border: 1px solid #dcebea;
+            border-radius: 18px
+        }
+
+        .benefit-number {
+            color: var(--coral);
+            font-size: 1.7rem;
+            font-weight: 900
+        }
+
+        .contact {
+            text-align: center;
+            color: var(--white);
+            background: linear-gradient(135deg, var(--turquoise-dark), var(--turquoise))
+        }
+
+        .contact h2 {
+            color: var(--white)
+        }
+
+        .contact-details {
+            margin: 24px 0 30px;
+            display: grid;
+            gap: 6px
+        }
+
+        .contact-details a {
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        .cta-recruit {
+            text-align: center;
+            background: var(--cream)
+        }
+
+        .cta-recruit p {
+            max-width: 700px;
+            margin: 0 auto 25px
+        }
+
+        footer {
+            padding: 24px 7%;
+            text-align: center;
+            background: #112d34;
+            color: #dcebea
+        }
+
+        .whatsapp {
+            position: fixed;
+            z-index: 20;
+            right: 20px;
+            bottom: 20px;
+            display: grid;
+            place-items: center;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .25)
+        }
+
+        @media(max-width:900px) {
+            .nav {
+                align-items: flex-start
+            }
+
+            .nav-links a:not(.nav-recruit) {
+                display: none
+            }
+
+            .cards,
+            .benefits,
+            .about-grid {
+                grid-template-columns: 1fr
+            }
+
+            .card img {
+                height: 230px
+            }
+
+            section {
+                padding: 66px 6%
+            }
+
+            .nav-logo {
+                width: 130px
+            }
+
+            .nav-recruit {
+                font-size: .85rem
+            }
+        }
+
+        .hero-recruit {
+            min-height: 72vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 140px 7% 80px;
+            color: white;
+            background: linear-gradient(rgba(9, 54, 62, .58), rgba(9, 54, 62, .72)), url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat
+        }
+
+        .hero-recruit .hero-content {
+            max-width: 820px
+        }
+
+        .hero-recruit h1 {
+            font-size: clamp(2.4rem, 6vw, 4.5rem);
+            line-height: 1.08;
+            margin: 12px 0 22px
+        }
+
+        .steps {
+            counter-reset: steps;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .step {
+            padding: 30px;
+            border-radius: 18px;
+            background: white;
+            box-shadow: var(--shadow)
+        }
+
+        .step:before {
+            counter-increment: steps;
+            content: counter(steps);
+            display: grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--coral);
+            color: white;
+            font-weight: 900;
+            margin-bottom: 16px
+        }
+
+        .form-wrap {
+            max-width: 820px;
+            margin: auto;
+            background: white;
+            padding: 36px;
+            border-radius: 24px;
+            box-shadow: var(--shadow)
+        }
+
+        .field {
+            display: grid;
+            gap: 7px;
+            margin-bottom: 18px
+        }
+
+        .field label {
+            font-weight: 750
+        }
+
+        .field input,
+        .field textarea,
+        .field select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbdedd;
+            border-radius: 10px;
+            font: inherit
+        }
+
+        .field input:focus,
+        .field textarea:focus,
+        .field select:focus {
+            outline: 3px solid rgba(47, 166, 164, .18);
+            border-color: var(--turquoise)
+        }
+
+        .consent {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin: 18px 0;
+            font-size: .92rem
+        }
+
+        .consent input {
+            margin-top: 5px
+        }
+
+        .notice {
+            margin-top: 18px;
+            padding: 14px;
+            border-radius: 10px;
+            background: var(--cream);
+            font-size: .9rem
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: var(--turquoise-dark);
+            font-weight: 750;
+            text-decoration: none
+        }
+
+        @media(max-width:900px) {
+            .steps {
+                grid-template-columns: 1fr
+            }
+
+            .form-wrap {
+                padding: 24px
+            }
+
+            .hero-recruit {
+                min-height: 65vh
+            }
+
+            .nav-links a {
+                display: none !important
+            }
+
+            .nav-links .nav-recruit {
+                display: inline-block !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav"><a href="index.html"><img class="nav-logo" src="logo.png" alt="Logótipo Studio HR Travel"></a>
+        <div class="nav-links"><a href="index.html">Página inicial</a><a class="nav-recruit"
+                href="#candidatura">Juntar-me</a></div>
+    </nav>
+    <header class="hero-recruit">
+        <div class="hero-content">
+            <p class="eyebrow">Studio HR Travel</p>
+            <h1>Queres juntar-te a nós nesta viagem?</h1>
+            <p>Cria o teu próprio negócio na area do turismo.</p>
+            <p>Transforma o teu gosto por viagens numa oportunidade profissional.</p> 
+            <a class="btn" href="#candidatura">Estou interessado</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="section-heading">
+                <h2>Vantagens de trabalhar connosco</h2>
+                <p class="eyebrow">A oportunidade</p>
+                <p>Uma oportunidade para desenvolver competências na area do turismo, apoiar clientes e crescer a nivel pessoal e financeiro.</p>
+            </div>
+            <div class="benefits">
+                <article class="benefit">
+                    <div class="benefit-number">01</div>
+                    <h3>Operações</h3>
+                    <p>Faz a gestão da sua atividade com o apoio de um ambiente operacional completo e integrado.</p>
+                </article>
+                <article class="benefit">
+                    <div class="benefit-number">02</div>
+                    <h3>Academy</h3>
+                    <p>Desenvolve as tuas competências no turismo com uma aprendizagem estruturada e focada no teu crescimento.</p>
+                </article>
+                <article class="benefit">
+                    <div class="benefit-number">03</div>
+                    <h3>Crescimento</h3>
+                    <p>Possibilidade de evolução na carreira, quanto maior faturação maior é o teu crescimento. "Os teus ganhos refletem a tua atividade."</p>
+                </article>
+                <article class="benefit">
+                    <div class="benefit-number">04</div>
+                    <h3>Comunidade</h3>
+                    <p>Faz parte de uma comunidade onde a conexão impulsiona o crescimento.</p>
+                </article>
+                <article class="benefit">
+                    <div class="benefit-number">05</div>
+                    <h3>Marketing</h3>
+                    <p>Reforça a tua presença no setor do turismo com acesso a recursos de marketing e orientação estratégica.</p>
+                </article>
+                <article class="benefit">
+                    <div class="benefit-number">06</div>
+                    <h3>Impacto direto</h3>
+                    <p>Ajuda os clientes a transformar ideias em viagens bem organizadas e acompanha-os nas suas viagens de sonho.</p>
+                </article>
+            </div>
+        </section>
+        <section class="about">
+            <div class="section-heading">
+                <p class="eyebrow">Perfil</p>
+                <h2>Porque inciar uma atividade profissional no setor do turismo?</h2>
+            </div>
+            <div class="about-panel" style="max-width:800px;margin:auto">
+                <p class="eyebrow">Tens que:</p>
+                <ul class="checks">
+                <p>O setor das viagens e do turismo é um dos setores globais que mais cresce, impulsionado pela crescente procura por experiências de viagem e soluções digitais.</p>
+                <p>De acordo com o Conselho Mundial de Viagens e Turismo, prevê-se que o setor atinja 15,5 mil milhões de dólares até 2034, crescendo a um ritmo superior ao da economia global.</p>
+                <p>Ao mesmo tempo, a OMT refere que as viagens internacionais já recuperaram para níveis próximos dos pré-pandémicos, com mais de 1,3 mil milhões de chegadas em 2024.</p>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section-heading">
+                <p class="eyebrow">Processo</p>
+                <h2>Como funciona?</h2>
+            </div>
+            <div class="steps">
+                <article class="step">
+                    <h3>Find your Travel Partner</h3>
+                    <p>Seremos o teu Travel Partner de contacto. Iremos orientar-te e ajudar-te a dar os primeiros passos</p>
+                </article>
+                <article class="step">
+                    <h3>Começa</h3>
+                    <p>Depois de falares comigo iremos apresentar-te o negócio para que fiques a conhecer como tudo funciona. Assim que as tuas duidas fiquem esclarecidas completas o teu registo para inicair a atividade na plataforma.</p>
+                </article>
+                <article class="step">
+                    <h3>Inicia a tua atividade profissional</h3>
+                    <p>Depois de concluires a tua formação inicial, dá os primeiros passos na plataforma. Com o nosso apoio e da comunidade, poderás começar a desenvolver a tua atividade no setor do turismo de forma estruturada, orientada e consistente. </p>
+                </article>
+            </div>
+        </section>
+        <section class="about" id="candidatura">
+            <div class="section-heading">
+                <p class="eyebrow">Quero juntar-me</p>
+                <h2>Conta-nos um pouco sobre ti</h2>
+            </div>
+            <form class="form-wrap" action="https://formspree.io/f/mdekdnlw" method="POST"><input type="hidden"
+                    name="assunto" value="Nova candidatura - Studio HR Travel">
+                <div class="field"><label for="nome">Nome *</label><input id="nome" name="nome" type="text"
+                        autocomplete="name" required></div>
+                <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email"
+                        autocomplete="email" required></div>
+                <div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone"
+                        type="tel" autocomplete="tel" required></div>
+                <div class="field"><label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text"
+                        autocomplete="address-level2"></div>
+                <div class="field"><label for="mensagem">Porque gostarias de trabalhar connosco? *</label><textarea
+                        id="mensagem" name="mensagem" rows="7" required></textarea></div>
+                </label><button class="btn" type="submit">Enviar dados</button>
+            </form>
+            <div style="text-align:center"><a class="back-link" href="index.html">← Voltar à página principal</a></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Studio HR Travel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
