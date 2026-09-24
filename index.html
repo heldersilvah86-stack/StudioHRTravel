@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Studio HR Travel | Agência de Viagens</title>
+
+    <style>
+        :root {
+            --primary: #32A8A8;
+            --secondary: #FF7D6A;
+            --light: #F4EAD3;
+            --dark: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* HERO */
+
+        header {
+            background:
+                linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero {
+            max-width: 900px;
+            color: white;
+        }
+
+        .logo {
+            width: 320px;
+            max-width: 90%;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--secondary);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* SECÇÕES */
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary);
+            font-size: 2.2rem;
+        }
+
+        /* DESTINOS */
+
+        .destinos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* SOBRE */
+
+        .about {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* VANTAGENS */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+        }
+
+        .feature h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        /* CONTACTOS */
+
+        .contact {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 25px;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* WHATSAPP */
+
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 28px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+        }
+
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hero">
+
+            logo.png
+
+            <h1>As Suas Próximas Férias Começam Aqui</h1>
+
+            <p>
+                Especialistas em viagens personalizadas,
+                lua de mel, resorts tudo incluído,
+                circuitos e destinos de sonho.
+            </p>
+
+            #contactos
+                Pedir Orçamento
+            </a>
+
+        </div>
+
+    </header>
+
+    <section>
+
+        <h2 class="section-title">Destinos em Destaque</h2>
+
+        <div class="destinos">
+
+            <div class="card">
+                https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=80
+
+                <div class="card-content">
+                    <h3>Maldivas</h3>
+                    <p>Praias paradisíacas, águas cristalinas e resorts de luxo.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80
+
+                <div class="card-content">
+                    <h3>Caraíbas</h3>
+                    <p>Férias tudo incluído nos melhores destinos tropicais.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80
+
+                <div class="card-content">
+                    <h3>Tailândia</h3>
+                    <p>Cultura, gastronomia e praias inesquecíveis.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2 class="section-title">Sobre a Studio HR Travel</h2>
+
+        <p>
+            Tratamos de toda a organização da sua viagem,
+            encontrando as melhores opções de voos,
+            hotéis, transfers e seguros para que possa
+            viajar com total tranquilidade.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Porque Viajar Connosco?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>✈️ Viagens Personalizadas</h3>
+                <p>Cada cliente recebe uma proposta à medida.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💰 Melhores Opções</h3>
+                <p>Seleção cuidada de fornecedores e serviços.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📞 Apoio Permanente</h3>
+                <p>Acompanhamento antes, durante e após a viagem.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contactos" class="contact">
+
+        <h2>Peça Já o Seu Orçamento</h2>
+
+        <p>📞 +351 XXX XXX XXX</p>
+        <p>📧 geral@studiohrtravel.pt</p>
+        <p>📍 Braga, Portugal</p>
+
+        <br>
+
+        https://wa.me/351XXXXXXXXX
+            Falar no WhatsApp
+        </a>
+
+    </section>
+
+    <footer>
+        © 2026 Studio HR Travel. Todos os direitos reservados.
+    </footer>
+
+    https://wa.me/351XXXXXXXXX
+        💬
+    </a>
+
+</body>
+
+</html>
