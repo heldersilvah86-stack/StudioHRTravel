@@ -195,6 +195,13 @@
             align-items: center;
             gap: 52px
         }
+        .about-reverse .about-grid 
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 40px;
+        }
 
         .about-copy p {
             margin-bottom: 18px
@@ -335,6 +342,13 @@
             .nav-recruit {
                 font-size: .85rem
             }
+            .about-image img 
+            {
+                max-width: 150px;
+                width: 70%;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            }
         }
     </style>
 </head>
@@ -401,11 +415,6 @@
                     <p>Nós tratamos da viagem. O cliente só precisa de ir.</p>
                     <p>Garantimos acompanhamento próximo. Se surgir algum problema durante a viagem, pode contactar-nos.
                     </p>
-                    <p class="eyebrow">Quem somos</p>
-                    <h2>Rita Gomes</h2>
-                    <p>Gestora e empreendedora.</p>
-                    <h2>Helder Silva</h2>
-                    <p>Engenheiro informático e cofundador da Studio HR Travel.</p>
                 </div>
                 <div class="about-panel">
                     <ul class="checks">
@@ -417,6 +426,27 @@
                         <li>Acompanhamento próximo</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section class="about" id="sobre">
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p class="eyebrow">Quem somos</p>
+                    <h2>Rita Gomes</h2>
+                    <li>Gestora e empreendedora;</li>
+                    <li>Mãe de uma menina maravilhosa;</li>
+                    <li>Lutadora e ambiciosa;</li>
+                    <li>Sempre pronta a ajudar a encontrar a sua viagem ao melhor preço.
+                    </li>
+                    <h2>Helder Silva</h2>
+                    <li>Engenheiro informático e cofundador da Studio HR Travel.</li>
+                    <li>Pai de uma menina brincalhona;</li>
+                    <li>Ambicioso e divertido;</li>
+                    <li>Sempre pronto a ajudar a encontrar as melhores opçoes para as suas viagens.
+                    </li>
+                </div>
+                <div>
+                    <img class="card" src="quemsomos.png"</div>
             </div>
         </section>
         <section>
